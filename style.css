@@ -18,24 +18,24 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 150px;
+    width: 100px;
 }
-.nav-links{
+.menu-links{
     flex: 1;
     text-align: right;
 }
-.nav-links ul li{
+.menu-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.nav-links ul li a{
+.menu-links ul li a{
     color: #ffff;
     text-decoration: none;
     font-size: 13px;
 }
-.nav-links ul li::after{
+.menu-links ul li::after{
     content: '';
     width: 0%;
     height:2px;
@@ -44,6 +44,70 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li:hover:after{
+.menu-links ul li:hover:after{
     width: 100%;
+}
+.slogon-box{
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.slogon-box h1{
+    font-size: 62px;
+}
+.slogon-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #ffff;
+}
+.knowmore-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    border: 1px solid #ffff;
+    padding: 10px 24px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.knowmore-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .slogon-box h1{
+        font-size: 20px;
+    }
+    .menu-links ul li{
+        display: block;
+    }
+    .menu-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: #ffff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .menu-links ul{
+        padding: 30px;
+    }
 }
