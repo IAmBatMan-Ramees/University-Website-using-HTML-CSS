@@ -126,7 +126,7 @@ h1{
 }
 p{
     color:#777;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -135,6 +135,9 @@ p{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+}
+.course-row p{
+    font-size: 14px;
 }
 .course-col{
     flex-basis: 31%;
@@ -157,4 +160,34 @@ h3{
     .course-row{
         flex-direction: column;
     }
+}
+
+/*----- Campus -------*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
 }
