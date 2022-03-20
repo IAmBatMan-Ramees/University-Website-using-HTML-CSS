@@ -234,7 +234,7 @@ h3{
     justify-content: space-between;
 }
 .facilities-col{
-    flex-basis: 31%; 
+    flex-basis: 31%;
     margin-bottom: 5%;
     text-align: left;
 }
@@ -254,4 +254,23 @@ h3{
     .facilities-row{
         flex-direction: column;
     }
+}
+
+/*----- testimonial-----*/
+.testimonial{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
