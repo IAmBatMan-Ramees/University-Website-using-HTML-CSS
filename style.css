@@ -252,6 +252,9 @@ h3{
     text-align: left;
 }
 @media(max-width: 700px){
+    .facilities{
+        padding-top: 60px;
+    }
     .facilities-row{
         flex-direction: column;
     }
@@ -298,6 +301,9 @@ h3{
     color: #f44336;
 }
 @media(max-width: 700px){
+    .testimonial{
+        padding-top: 60px;
+    }
     .testimonial-row{
         flex-direction: column;
     }
@@ -308,3 +314,57 @@ h3{
 }
 
 /*------ Call To Action -----*/
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    height: 200px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width: 700px){
+    .cta {
+        margin: 60px auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .cta h1{
+        font-size: 20px;
+    }
+}
+
+/*-------- Footer --------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa {
+    color:#f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #f44336;
+}
+@media(max-width: 700px){
+    .footer {
+        padding-top: 30px;
+    }
+}
